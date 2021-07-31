@@ -17,16 +17,19 @@ func isLeap(year: Int) {
               msg = "\(year) isn't a leap year"  
 
             }
+
         } else {
             msg = "\(year) is a leap year"
 
         }
+        
     } else {
         msg = "\(year) isn't a leap year"
-        
+
     }
    
     print(msg)
 }
 
 isLeap(year: aYear)
+
