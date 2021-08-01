@@ -6,7 +6,7 @@ struct Town {
     var resourcers: [String: Int]
 
     // a Init is like a constructor, a custom  way to use this properties
-    init(townName: String, people: [String], stats: [String: Int]) {
+    init(namee: String, citizes: [String], resources: [String: Int]) {
         // "this." refers to Town, the struct. For using same name and letting a new object less confusing
         this.name = name
         this.citizens = citizes
