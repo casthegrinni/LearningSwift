@@ -1,2 +1,2 @@
 # LearningSwift
-Studying and testing things from a Swift course from Udemy
+Studying and testing things from an Udemy Swift course
