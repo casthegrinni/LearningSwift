@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SecondViewController">
+            <connections>
+                <outlet property="itensTable" destination="SEp-jv-2Qb" id="PAg-Jn-iA6"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="SEp-jv-2Qb">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <color key="separatorColor" systemColor="opaqueSeparatorColor"/>
+                    <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="vaJ-a1-0be"/>
+                        <outlet property="delegate" destination="-1" id="08m-ek-ZN9"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mAW-Kf-UdH">
+                    <rect key="frame" x="149" y="684" width="119" height="114"/>
+                    <state key="normal" title="Button" image="back"/>
+                    <connections>
+                        <action selector="goBackButton:" destination="-1" eventType="touchUpInside" id="qQp-Cg-0v4"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="mAW-Kf-UdH" secondAttribute="trailing" constant="146" id="2Qr-Pw-gSS"/>
+                <constraint firstItem="mAW-Kf-UdH" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="149" id="8ok-mF-6qP"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="SEp-jv-2Qb" secondAttribute="trailing" id="J3B-x7-1ha"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="SEp-jv-2Qb" secondAttribute="bottom" id="L3z-7w-TGr"/>
+                <constraint firstItem="SEp-jv-2Qb" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="VCi-ek-m1y"/>
+                <constraint firstItem="SEp-jv-2Qb" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="a56-YD-2yF"/>
+                <constraint firstItem="mAW-Kf-UdH" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="293" id="l31-IQ-r93"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="mAW-Kf-UdH" secondAttribute="bottom" constant="64" id="tep-Gn-S71"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="93.75"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="back" width="512" height="512"/>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

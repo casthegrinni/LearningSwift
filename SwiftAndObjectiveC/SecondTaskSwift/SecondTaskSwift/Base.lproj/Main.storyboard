@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IqJ-O7-O8D">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SecondTaskSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sinisterForest" translatesAutoresizingMaskIntoConstraints="NO" id="RxX-Sj-yTy">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Dj-Ak-i5V">
+                                <rect key="frame" x="143" y="377" width="128" height="142"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="5Dj-Ak-i5V" secondAttribute="height" multiplier="64:71" id="1rI-Cg-Q9i"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="128" id="N7i-j7-fKc"/>
+                                    <constraint firstAttribute="height" constant="142" id="tFi-Qh-y4P"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="down-chevron"/>
+                                <connections>
+                                    <action selector="startButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gMv-2G-bed"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5Dj-Ak-i5V" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3pT-su-1To"/>
+                            <constraint firstItem="RxX-Sj-yTy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="LOi-Fr-rSn"/>
+                            <constraint firstItem="5Dj-Ak-i5V" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="PSZ-6w-Aoo"/>
+                            <constraint firstAttribute="trailing" secondItem="RxX-Sj-yTy" secondAttribute="trailing" id="cWA-GR-Diq"/>
+                            <constraint firstItem="RxX-Sj-yTy" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="pO7-2J-ww7"/>
+                            <constraint firstAttribute="bottom" secondItem="RxX-Sj-yTy" secondAttribute="bottom" id="rdt-00-ZNu"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="1sx-3o-D9m"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1015.9420289855074" y="88.392857142857139"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="AHi-1P-Z5H">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="IqJ-O7-O8D" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nME-4m-wqb">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="hto-mr-F11"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LXV-tU-iUG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="105.79710144927537" y="88.392857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="down-chevron" width="512" height="512"/>
+        <image name="sinisterForest" width="685" height="1024"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
