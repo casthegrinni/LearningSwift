@@ -27,7 +27,7 @@ class ThirdViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        if indexPath.row%4 != 0 || indexPath.row == 0 {
+        if (indexPath.row+1)%4 != 0 {
             let cell = mainTableView.dequeueReusableCell(withIdentifier: "newCell", for: indexPath) as? NewCell
             
             cell?.testingLabel.text = itensArray[indexPath.row]
